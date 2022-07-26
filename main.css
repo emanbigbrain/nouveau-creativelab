@@ -41,6 +41,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  font-size: 100%;
 }
 
 .bodyDiv {
@@ -296,4 +297,15 @@ h6 {
 
 .aboutSection {
   padding: 15vh 2vw;
+}
+
+.previewDiv {
+  overflow: hidden;
+  height: 3em;
+}
+
+.moveableDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

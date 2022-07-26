@@ -15,12 +15,22 @@ card1.addEventListener("click", () => {
       duration: 1,
       ease: "expo",
     });
+    gsap.to(".move1", {
+      y: -50,
+      duration: 1,
+      ease: "elastic",
+    });
     click = true;
   } else if (click === true) {
     gsap.to("#card1", {
       height: "15vh",
       duration: 1,
       ease: "expo",
+    });
+    gsap.to(".move1", {
+      y: 0,
+      duration: 1,
+      ease: "elastic",
     });
     click = false;
   }
@@ -33,12 +43,22 @@ card2.addEventListener("click", () => {
       duration: 1,
       ease: "expo",
     });
+    gsap.to(".move2", {
+      y: -50,
+      duration: 1,
+      ease: "elastic",
+    });
     click2 = true;
   } else if (click2 === true) {
     gsap.to("#card2", {
       height: "15vh",
       duration: 1,
       ease: "expo",
+    });
+    gsap.to(".move2", {
+      y: 0,
+      duration: 1,
+      ease: "elastic",
     });
     click2 = false;
   }
@@ -51,12 +71,22 @@ card3.addEventListener("click", () => {
       duration: 1,
       ease: "expo",
     });
+    gsap.to(".move3", {
+      y: -50,
+      duration: 1,
+      ease: "elastic",
+    });
     click3 = true;
   } else if (click3 === true) {
     gsap.to("#card3", {
       height: "15vh",
       duration: 1,
       ease: "expo",
+    });
+    gsap.to(".move3", {
+      y: 0,
+      duration: 1,
+      ease: "elastic",
     });
     click3 = false;
   }
@@ -69,12 +99,22 @@ card4.addEventListener("click", () => {
       duration: 1,
       ease: "expo",
     });
+    gsap.to(".move4", {
+      y: -50,
+      duration: 1,
+      ease: "elastic",
+    });
     click4 = true;
   } else if (click4 === true) {
     gsap.to("#card4", {
       height: "15vh",
       duration: 1,
       ease: "expo",
+    });
+    gsap.to(".move4", {
+      y: 0,
+      duration: 1,
+      ease: "elastic",
     });
     click4 = false;
   }
