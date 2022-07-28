@@ -79,6 +79,7 @@ a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 100%;
 }
 
 .filler {
@@ -127,6 +128,7 @@ h1 {
   align-items: flex-end;
   position: relative;
   z-index: 1000;
+  font-size: 100%;
 }
 
 .bigCircles {
@@ -311,31 +313,91 @@ h6 {
 }
 
 @media only screen and (max-width: 1200px) {
-  body {
-    font-size: 80%;
-  }
 }
 
 @media only screen and (max-width: 1100px) {
-  body {
-    font-size: 60%;
-  }
 }
 
 @media only screen and (max-width: 850px) {
-  body {
-    font-size: 50%;
+  .heroFlex {
+    font-size: 90%;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  body {
-    font-size: 40%;
+  .heroFlex {
+    font-size: 75%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    font-size: 30%;
+  .heroFlex {
+    font-size: 47%;
+  }
+  .bigCircles {
+    top: 40%;
+    left: 80%;
+    width: 20%;
+  }
+  .arrowDown {
+    display: none;
+  }
+  .webLogo {
+    width: 30%;
+    content: url("media/webminified.svg");
+  }
+  .headerButtonContainer {
+    font-size: 80%;
+  }
+  .contactLink {
+    padding: 5px 12px;
+  }
+  .heroSection {
+    height: 60vh;
+    margin-bottom: 0vh;
+  }
+  .statement {
+    font-size: 5.2em;
+  }
+
+  .paragraph {
+    font-size: 0.875em;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 2.5em;
+  }
+
+  .card {
+    height: 50px;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  .valuesText {
+    font-size: 0.875em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 10vw;
+    gap: 5%;
+  }
+
+  h6 {
+    font-size: 4em;
+    margin-top: 0;
+  }
+
+  .contactInfo {
+    text-align: left;
+    font-size: 1.25em;
   }
 }
