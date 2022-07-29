@@ -312,6 +312,33 @@ h6 {
   align-items: flex-end;
 }
 
+.contactButton {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.contactButtonText {
+  text-align: center;
+  margin: 0;
+  font-family: Poppins-Bold;
+  font-size: 1em;
+  line-height: 80%;
+  color: var(--color-white);
+}
+
+.contactButtonFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-green);
+  border-radius: 40px;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1200px) {
 }
 
@@ -347,10 +374,10 @@ h6 {
     content: url("media/webminified.svg");
   }
   .headerButtonContainer {
-    font-size: 80%;
+    font-size: 100%;
   }
   .contactLink {
-    padding: 5px 12px;
+    display: none;
   }
   .heroSection {
     height: 60vh;
@@ -399,5 +426,9 @@ h6 {
   .contactInfo {
     text-align: left;
     font-size: 1.25em;
+  }
+
+  .contactButton {
+    display: block;
   }
 }
